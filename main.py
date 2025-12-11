@@ -119,7 +119,6 @@ for jogador, posicao, clube_destino in transferencias:
     kg.addRelations("Santa Cruz", jogador, "jogou") 
     kg.addRelations(jogador, clube_destino, "foi para")
 
-print("Antes da remoção:")
 kg.seeConections('Tiago Cardoso')
 
 print("\n" + "="*50 + "\n")
@@ -130,8 +129,5 @@ print("Tentando ver conexões após remoção:")
 kg.seeConections('Tiago Cardoso')
 
 print("\n" + "="*50 + "\n")
-
-print("Conexões do Santa Cruz após remoção:")
-kg.seeConections('Santa Cruz')
 
 kg.exibir_visualizacao()
